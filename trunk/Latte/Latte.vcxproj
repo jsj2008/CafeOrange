@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D4C62F48-4B1B-4ED7-915B-3134C5A41540}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Latte</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>../Library/glew-1.12.0/include;$(VCInstallDir)PlatformSDK\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>../Library/glut-3.7.6/;../Library/glew-1.5.1/include;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(VCInstallDir)PlatformSDK\include;$(WindowsSdkDir)include\shared;$(WindowsSdkDir)include\um;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../Library/glut-3.7.6;../glm-0.9.6.3/glm/glm/;../Library/glew-1.12.0/include/;../Util/;../Library/opencv/include/;../Library/freeglut-MSVC-3.0.0-1.mp/freeglut/include;../Simple OpenGL Image Library/src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../glm-0.9.6.3/glm/glm/;../Library/glew-1.12.0/include/;../Util/;../Simple OpenGL Image Library/src;../Library/opencv/include/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bgActor.h" />
+    <ClInclude Include="bgAlgorithm.h" />
+    <ClInclude Include="bgData.h" />
+    <ClInclude Include="bgGizmo.h" />
+    <ClInclude Include="bgMapper.h" />
+    <ClInclude Include="bgMovie.h" />
+    <ClInclude Include="bgMovieAlgorithm.h" />
+    <ClInclude Include="bgObject.h" />
+    <ClInclude Include="bgPhotoEffectAlgorithm.h" />
+    <ClInclude Include="bgPostProcess.h" />
+    <ClInclude Include="bgProperty.h" />
+    <ClInclude Include="bgSceneObserver.h" />
+    <ClInclude Include="bgShader.h" />
+    <ClInclude Include="bgShaderAlgorithm.h" />
+    <ClInclude Include="bgShaderFactory.h" />
+    <ClInclude Include="bgShaderProperty.h" />
+    <ClInclude Include="bgShapeInfo.h" />
+    <ClInclude Include="bgSpecialEffectAlgorithm.h" />
+    <ClInclude Include="bgTexture.h" />
+    <ClInclude Include="bgUtil.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CurveParam.h" />
+    <ClInclude Include="DefineEvent.h" />
+    <ClInclude Include="GlobalEnum.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="bgMaterial.h" />
+    <ClInclude Include="MessageWindow.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="MovieScene.h" />
+    <ClInclude Include="ObjLoader.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="ShaderStrings.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bgActor.cpp" />
+    <ClCompile Include="bgAlgorithm.cpp" />
+    <ClCompile Include="bgData.cpp" />
+    <ClCompile Include="bgGizmo.cpp" />
+    <ClCompile Include="bgMapper.cpp" />
+    <ClCompile Include="bgMovie.cpp" />
+    <ClCompile Include="bgMovieAlgorithm.cpp" />
+    <ClCompile Include="bgObject.cpp" />
+    <ClCompile Include="bgPhotoEffectAlgorithm.cpp" />
+    <ClCompile Include="bgPostProcess.cpp" />
+    <ClCompile Include="bgProperty.cpp" />
+    <ClCompile Include="bgSceneObserver.cpp" />
+    <ClCompile Include="bgShader.cpp" />
+    <ClCompile Include="bgShaderAlgorithm.cpp" />
+    <ClCompile Include="bgShaderFactory.cpp" />
+    <ClCompile Include="bgShaderProperty.cpp" />
+    <ClCompile Include="bgShapeInfo.cpp" />
+    <ClCompile Include="bgSpecialEffectAlgorithm.cpp" />
+    <ClCompile Include="bgTexture.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CurveParam.cpp" />
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="bgMaterial.cpp" />
+    <ClCompile Include="MessageWindow.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="MovieScene.cpp" />
+    <ClCompile Include="ObjLoader.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\bgData">
+      <UniqueIdentifier>{4b5eb917-b37d-496d-bb5a-86733b58fa57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\bgMapper">
+      <UniqueIdentifier>{13d58662-11ff-4774-9a58-92397cf7378b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Import">
+      <UniqueIdentifier>{a0196800-166f-44bf-b781-a53bb361db6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\bgActor">
+      <UniqueIdentifier>{752c6a7b-075a-4c01-9195-383531ff4575}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\bgAlgorithm">
+      <UniqueIdentifier>{7d84f3f1-34af-40d3-9586-45f66424f257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\shader">
+      <UniqueIdentifier>{7b89b336-669c-46aa-8373-39ab4da3a145}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\ui">
+      <UniqueIdentifier>{33007533-ccf8-4c78-83ac-4342c0eb0e02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\bgGizmo">
+      <UniqueIdentifier>{d723ba26-bffc-48f2-b753-be87a760d354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene">
+      <UniqueIdentifier>{e0cb8ee2-689e-4a2e-8187-0df1d1aa7a7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Movie">
+      <UniqueIdentifier>{3160b918-9226-4b3d-bc27-abaadc45c5c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\bgMaterial">
+      <UniqueIdentifier>{231e07ab-bc0e-4690-b6fe-69c8d44db458}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjLoader.h">
+      <Filter>소스 파일\Import</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalEnum.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="bgActor.h">
+      <Filter>소스 파일\bgActor</Filter>
+    </ClInclude>
+    <ClInclude Include="bgAlgorithm.h">
+      <Filter>소스 파일\bgAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="bgData.h">
+      <Filter>소스 파일\bgData</Filter>
+    </ClInclude>
+    <ClInclude Include="bgMapper.h">
+      <Filter>소스 파일\bgMapper</Filter>
+    </ClInclude>
+    <ClInclude Include="bgShader.h">
+      <Filter>소스 파일\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="bgObject.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="bgShaderProperty.h">
+      <Filter>소스 파일\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderStrings.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="bgSceneObserver.h">
+      <Filter>소스 파일\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="bgProperty.h">
+      <Filter>소스 파일\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="DefineEvent.h">
+      <Filter>소스 파일\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageWindow.h">
+      <Filter>소스 파일\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="bgUtil.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="bgTexture.h">
+      <Filter>소스 파일\bgMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="bgMaterial.h">
+      <Filter>소스 파일\bgMaterial</Filter>
+    </ClInclude>
+    <ClInclude Include="bgShaderFactory.h">
+      <Filter>소스 파일\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="bgShaderAlgorithm.h">
+      <Filter>소스 파일\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="bgShapeInfo.h">
+      <Filter>소스 파일\bgData</Filter>
+    </ClInclude>
+    <ClInclude Include="bgGizmo.h">
+      <Filter>소스 파일\bgGizmo</Filter>
+    </ClInclude>
+    <ClInclude Include="CurveParam.h">
+      <Filter>소스 파일\bgAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>소스 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="MovieScene.h">
+      <Filter>소스 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="bgMovie.h">
+      <Filter>소스 파일\Movie</Filter>
+    </ClInclude>
+    <ClInclude Include="bgMovieAlgorithm.h">
+      <Filter>소스 파일\bgAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="bgPhotoEffectAlgorithm.h">
+      <Filter>소스 파일\bgAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="bgPostProcess.h">
+      <Filter>소스 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="bgSpecialEffectAlgorithm.h">
+      <Filter>소스 파일\bgAlgorithm</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjLoader.cpp">
+      <Filter>소스 파일\Import</Filter>
+    </ClCompile>
+    <ClCompile Include="bgData.cpp">
+      <Filter>소스 파일\bgData</Filter>
+    </ClCompile>
+    <ClCompile Include="bgObject.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="bgMapper.cpp">
+      <Filter>소스 파일\bgMapper</Filter>
+    </ClCompile>
+    <ClCompile Include="bgActor.cpp">
+      <Filter>소스 파일\bgActor</Filter>
+    </ClCompile>
+    <ClCompile Include="bgShader.cpp">
+      <Filter>소스 파일\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="bgShaderProperty.cpp">
+      <Filter>소스 파일\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="bgSceneObserver.cpp">
+      <Filter>소스 파일\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="bgProperty.cpp">
+      <Filter>소스 파일\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageWindow.cpp">
+      <Filter>소스 파일\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="bgTexture.cpp">
+      <Filter>소스 파일\bgMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="bgMaterial.cpp">
+      <Filter>소스 파일\bgMaterial</Filter>
+    </ClCompile>
+    <ClCompile Include="bgShaderFactory.cpp">
+      <Filter>소스 파일\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="bgShaderAlgorithm.cpp">
+      <Filter>소스 파일\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="bgShapeInfo.cpp">
+      <Filter>소스 파일\bgData</Filter>
+    </ClCompile>
+    <ClCompile Include="bgAlgorithm.cpp">
+      <Filter>소스 파일\bgAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="bgGizmo.cpp">
+      <Filter>소스 파일\bgGizmo</Filter>
+    </ClCompile>
+    <ClCompile Include="CurveParam.cpp">
+      <Filter>소스 파일\bgAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="MovieScene.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="bgMovie.cpp">
+      <Filter>소스 파일\Movie</Filter>
+    </ClCompile>
+    <ClCompile Include="bgMovieAlgorithm.cpp">
+      <Filter>소스 파일\bgAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="bgPhotoEffectAlgorithm.cpp">
+      <Filter>소스 파일\bgAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="bgPostProcess.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="bgSpecialEffectAlgorithm.cpp">
+      <Filter>소스 파일\bgAlgorithm</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
